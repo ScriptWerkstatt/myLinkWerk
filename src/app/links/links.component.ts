@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 
 interface UserModel {
   name:     string,
@@ -16,9 +15,7 @@ interface LinksCards extends Array<LinksCard> {};
 @Component({
   selector: 'app-links',
   standalone: true,
-  imports: [
-    RouterLink
-  ],
+  imports: [],
   templateUrl: './links.component.html',
   styleUrl: './links.component.scss'
 })
@@ -35,6 +32,21 @@ export class LinksComponent {
       txt:  'My Twitch Streams',
       icon: 'bi bi-twitch',
       link: 'https://myLinkHere.com'
+    },
+    {
+      txt:  'ScriptWerk Github Projects',
+      icon: 'bi bi-github',
+      link: 'https://github.com/ScriptWerkstatt/myLinkWerk'
     }
   ];
+
+  /**
+   * @method navigates to a url
+   * @param {string} url the url as a string
+   * @author Flowtastisch
+   * @memberof ScriptWerk
+   */
+  onNavigateToURL (url: string) {
+    document.location.href = url;
+  }
 }

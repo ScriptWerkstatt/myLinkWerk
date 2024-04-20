@@ -1,11 +1,21 @@
 h1 {
     width: fit-content !important
 }
+
 .linksCard {
     max-width: 460px;
+    background-color: rgb(255, 255, 255, 0.2);
     .card-body {
         div {
             width: fit-content !important;
+        }
+        i {
+            margin-top: var(--bs-card-title-spacer-y);
+            margin-bottom: var(--bs-card-title-spacer-y);
+        }
+        h3 {
+            margin-top: var(--bs-card-title-spacer-y);
+            margin-bottom: var(--bs-card-title-spacer-y);
         }
     }
 }
