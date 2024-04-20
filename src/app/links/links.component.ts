@@ -22,16 +22,16 @@ interface LinksCards extends Array<LinksCard> {};
 export class LinksComponent {
 
   userModel: UserModel = {
-    name:     'myName',
-    img:      'profileImg.webp',
-    mainLink: 'https://myLinkHere.com'
+    name:     'myName',                 // Your name
+    img:      'profileImg.webp',        // Your profile image pathe inside "/assets/img/<HERE>"
+    mainLink: 'https://myLinkHere.com'  // The main link for your profile (for example your website or important profile)
   };
 
   cards: LinksCards = [
     {
-      txt:  'My Twitch Streams',
-      icon: 'bi bi-twitch',
-      link: 'https://myLinkHere.com'
+      txt:  'My Twitch Streams',      // Card text the user sees
+      icon: 'bi bi-twitch',           // Card icon before the text
+      link: 'https://myLinkHere.com'  // Card link the user navigates on click
     },
     {
       txt:  'ScriptWerk Github Projects',
