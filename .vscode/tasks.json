@@ -46,7 +46,7 @@
         "pull",
         "--all",
         "&&",
-        "for remote in `git branch -r`; do git checkout $remote && pull; done",
+        "for remote in $(git branch -r); do git checkout '${remote#origin/}' && git pull; done",
         "&&",
         "git",
         "push",
