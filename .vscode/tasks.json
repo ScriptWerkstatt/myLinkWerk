@@ -41,23 +41,8 @@
     {
       "label": "Fetch origin & Push internal",
       "type": "shell",
-      "command": "git",
-      "args": [
-        "pull",
-        "--all",
-        "&&",
-        "for remote in $(git branch -r); do git checkout '${remote#origin/}' && git pull; done",
-        "&&",
-        "git",
-        "push",
-        "internal",
-        "--all"
-      ],
-      "problemMatcher": [],
-      "group": {
-          "kind": "build",
-          "isDefault": false
-      }
+      "command": "./.vscode/pullAndPush.ps1",
+      "problemMatcher": []
     }
   ]
 }
