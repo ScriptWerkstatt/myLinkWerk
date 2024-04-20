@@ -43,8 +43,10 @@
       "type": "shell",
       "command": "git",
       "args": [
-        "fetch",
-        "origin",
+        "pull",
+        "--all",
+        "&&",
+        "for remote in `git branch -r`; do git checkout $remote && pull; done",
         "&&",
         "git",
         "push",
