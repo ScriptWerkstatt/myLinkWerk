@@ -37,6 +37,25 @@
           }
         }
       }
+    },
+    {
+      "label": "Fetch origin & Push internal",
+      "type": "shell",
+      "command": "git",
+      "args": [
+        "fetch",
+        "origin",
+        "&&",
+        "git",
+        "push",
+        "internal",
+        "--all"
+      ],
+      "problemMatcher": [],
+      "group": {
+          "kind": "build",
+          "isDefault": false
+      }
     }
   ]
 }
