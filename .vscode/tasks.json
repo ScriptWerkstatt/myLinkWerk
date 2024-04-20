@@ -39,9 +39,9 @@
       }
     },
     {
-      "label": "Fetch origin & Push internal",
+      "label": "Sende alle Änderungen an mein Projekt",
       "type": "shell",
-      "command": "./.vscode/pullAndPush.ps1",
+      "command": "./.vscode/sendChangesToMyProject.ps1",
       "problemMatcher": []
     }
   ]
