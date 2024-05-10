@@ -41,7 +41,8 @@
     {
       "label": "sync swift script",
       "type": "shell",
-      "command": "./.vscode/syncSwiftScript.ps1"
+      "command": "./.vscode/syncSwiftScript.ps1",
+      "problemMatcher": []
     }
   ]
 }
