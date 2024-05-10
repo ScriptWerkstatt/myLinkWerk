@@ -39,10 +39,9 @@
       }
     },
     {
-      "label": "Sende alle Änderungen an mein Projekt",
+      "label": "sync swift script",
       "type": "shell",
-      "command": "./.vscode/sendChangesToMyProject.ps1",
-      "problemMatcher": []
+      "command": "./.vscode/syncSwiftScript.ps1"
     }
   ]
 }
